@@ -10,30 +10,30 @@ return [
     | The following language lines contain the default error messages used by
     | the validator class. Some of these rules have multiple versions such
     | as the size rules. Feel free to tweak each of these messages here.
-    | Translated By : avasam.ir
+    |
     */
 
-    'accepted' => ':attribute باید تایید شود.',
-    'active_url' => ':attribute لینک وارد شده معتبر نیست.',
-    'after' => ':attribute تاریخ باید بعد از :date باشد',
-    'after_or_equal' => ':attribute تاریخ باید بعد یا مساوی با :date باشد.',
-    'alpha' => ':attribute فقط حروف مجاز است.',
-    'alpha_dash' => ':attribute فقط حروف ، اعداد ، خط تیره مانند - و _ مجاز است',
-    'alpha_num' => ':attribute فقط حروف و اعداد مجاز است..',
-    'array' => ':attribute فقط آرایه مجاز است.',
-    'before' => ':attribute باید تاریخ قبل از :date باشد.',
-    'before_or_equal' => ':attribute باید تاریخ قبل یا مساوی با :date باشد',
+    'accepted' => 'مشخصه :attribute باید قبول شود.',
+    'active_url' => 'مشخصه :attribute آدرس معتبری نیست.',
+    'after' => 'مشخصه :attribute باید تاریخی بعد از :date باشد.',
+    'after_or_equal' => 'مشخصه :attribute باید تاریخی برابر یا بعد از :date باشد.',
+    'alpha' => 'مشخصه :attribute می‌تواند تنها شامل حروف باشد.',
+    'alpha_dash' => 'مشخصه :attribute میتواند تنها شامل حروف، اعداد، خط تیره (-) و زیرخط (ـ) باشد.',
+    'alpha_num' => 'مشخصه :attribute تنها می‌تواند شامل حروف و اعداد باشد.',
+    'array' => 'مشخصه :attribute باید یک آرایه باشد.',
+    'before' => 'مشخصه :attribute باید تاریخی قبل از :date باشد.',
+    'before_or_equal' => 'مشخصه :attribute باید تاریخی قبل یا برابر با :date باشد.',
     'between' => [
-        'numeric' => ':attribute باید مابین  :min و :max باشد',
-        'file' => ':attribute باید مابین :min و :max کیلوبایت باشد.',
-        'string' => ':attribute باید مابین :min و :max کاراکتر باشد.',
-        'array' => ':attribute باید مابین :min و :max آیتم باشد.',
+        'numeric' => 'مشخصه :attribute باید مقداری بین :min و :max باشد.',
+        'file' => 'مشخصه :attribute باید بین :min و :max کیلوبایت باشد.',
+        'string' => 'مشخصه :attribute باید بین :min و :max کاراکتر باشد.',
+        'array' => 'مشخصه :attribute باید بین :min و :max آیتم باشد.',
     ],
-    'boolean' => ':attribute فیلد باید true یا false باشد.',
-    'confirmed' => ':attribute فیلد تایید یکسان نیست.',
-    'date' => ':attribute تاریخ معتبر وارد نشده است.',
-    'date_equals' => ':attribute باید تاریخ یکسان با :date وارد شود',
-    'date_format' => ':attribute فرمت باید به شکل :format وارد شود',
+    'boolean' => 'فیلد :attribute باید true یا false باشد.',
+    'confirmed' => 'پسوردها با یکدیگر یکسان نمی‌باشند. لطفاْ بطور صحیح آنها را وارد نمایید.',
+    'date' => 'مشخصه :attribute تاریخ صحیحی نمی‌باشد.',
+    'date_equals' => 'مشخصه :attribute باید تاریخی برابر با :date باشد.',
+    'date_format' => 'مشخصه :attribute باید به شکل :format وارد شود.',
     'different' => 'مقدار :attribute و :other باید متفاوت باشند.',
     'digits' => ':attribute باید :digits رقم باشد.',
     'digits_between' => ':attribute باید مابین :min و :max رقم باشد.',
@@ -63,7 +63,7 @@ return [
     'ip' => ':attribute باید IP آدرس معتبر وارد شود.',
     'ipv4' => ':attribute باید IP آدرس وارد شده IPv4 باشد.',
     'ipv6' => ':attribute باید IP آدرس وارد شده IPv6 باشد.',
-    'json' => ':attribute باید مقدار وارد شده JSON باشد.',
+    'json' => ':attribute باید مقدار وارد شده JSON باشد.'
     'lt' => [
         'numeric' => ':attribute باید کمتر از :value وارد شود',
         'file' => ':attribute باید کمتر از :value کیلوبایت باشد.',
@@ -90,9 +90,11 @@ return [
         'string' => ':attribute حداقل باید :min کارکتر باشد.',
         'array' => ':attribute حداقل باید :min آیتم باشد.',
     ],
+    'multiple_of' => ':attribute باید مضربی از :value باشد.',
     'not_in' => ':attribute معتبر نیست.',
     'not_regex' => ':attribute فرمت وارد شده معتبر نیست.',
     'numeric' => ':attribute باید یک عدد باشد.',
+    'password' => 'رمز عبور اشتباه است.',
     'present' => ':attribute باید موجودیت داشته باشد.',
     'regex' => ':attribute فرمت قابل قبول نیست.',
     'required' => 'فیلد :attribute اجباری است.',
@@ -142,12 +144,11 @@ return [
     | The following language lines are used to swap our attribute placeholder
     | with something more reader friendly such as "E-Mail Address" instead
     | of "email". This simply helps us make our message more expressive.
-    | Translated By : avasam.ir
     |
     */
 
     'attributes' => [
-        "name" => "نام",
+    	"name" => "نام",
         "username" => "نام کاربری",
         "email" => "آدرس ایمیل",
         "first_name" => "نام",
